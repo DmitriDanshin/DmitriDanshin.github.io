@@ -1,26 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <promo-block/>
+  <about-block/>
+  <contacts-block/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import AboutBlock from "./components/about/About-block";
+import ContactsBlock from "@/components/contacts/Contacts-block";
+import PromoBlock from "@/components/promo/Promo-block";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    PromoBlock,
+    ContactsBlock,
+    AboutBlock,
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

@@ -1,0 +1,119 @@
+.contacts {
+  padding-bottom: 90px;
+
+  &__wrapper {
+
+    padding: 0 35px 0 52px;
+    display: grid;
+    grid-template-columns: 400px 585px;
+    justify-content: space-between;
+  }
+
+  &__descr {
+    padding-top: 6px;
+
+    .divider {
+      margin: 0;
+    }
+
+    grid-row-start: 1;
+  }
+
+  &__title {
+    position: relative;
+    padding: 0 0 0 13px;
+  }
+
+
+  &__text {
+    margin-top: 20px;
+  }
+
+  &__social {
+    margin-top: 20px;
+
+    a {
+      text-decoration: none;
+      margin-right: 25px;
+    }
+
+    img {
+      max-width: 30px;
+      max-height: 30px;
+    }
+
+  }
+
+  &__photo {
+    img {
+      width: 100%;
+      min-height: 600px;
+    }
+  }
+
+  &__form {
+
+    margin-top: 30px;
+    display: grid;
+    grid-template: 45px 190px 45px / repeat(2, auto);
+    justify-content: space-between;
+    row-gap: 30px;
+  }
+
+  &__input {
+    margin: 2px;
+    position: relative;
+
+    input {
+      width: 230px;
+      font-weight: 500;
+      font-size: 12px;
+      padding: 0 20px;
+
+      height: 100%;
+    }
+
+    label {
+      display: block;
+      position: absolute;
+      height: 18px;
+      background-color: #fff;
+      padding: 0 8px;
+      font-size: 12px;
+
+      top: -6px;
+      left: 20px;
+
+    }
+  }
+
+  &__textarea {
+    position: relative;
+    grid-column: 1/3;
+
+    textarea {
+      width: calc(100% - 42px);
+      height: 100%;
+      resize: none;
+      padding: 20px 20px;
+    }
+
+    label {
+      position: absolute;
+      font-size: 12px;
+      top: -6px;
+      left: 20px;
+
+      padding: 0 8px;
+      background-color: #fff;
+    }
+
+    margin-bottom: 32px;
+  }
+
+  &__button {
+    border: none;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+}
