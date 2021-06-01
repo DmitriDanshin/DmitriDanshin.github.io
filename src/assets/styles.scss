@@ -1,11 +1,15 @@
-@import "variables";
-@import "fonts";
-@import "mixins";
-@import "functions";
-@import "general";
-@import "headers";
-@import "buttons";
+@import "helpers/variables";
+@import "helpers/fonts";
+@import "helpers/mixins";
+@import "helpers/functions";
+@import "helpers/general";
+@import "helpers/headers";
+@import "helpers/buttons";
 
 @import "../components/promo/promo";
 @import "../components/about/about";
 @import "../components/contacts/contacts";
+@import "../components/works/works";
+@import "../components/skills/skills";
+@import "../components/menu/menu";
+@import "../components/resume/resume";
