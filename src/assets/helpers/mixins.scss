@@ -1,5 +1,5 @@
-@mixin before-circle{
-  &::before{
+@mixin before-circle {
+  &::before {
     content: '';
     position: absolute;
     width: 36px;
@@ -9,5 +9,19 @@
     z-index: -1;
     top: -25%;
     left: 0px;
+  }
+}
+
+@mixin appear-animation {
+  animation: appear ease-in 0.75s;
+
+  @keyframes appear {
+    0% {
+      opacity: 0.25;
+
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }
