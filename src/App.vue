@@ -1,7 +1,7 @@
 <template>
 
-  <promo-block/>
-  <menu-block/>
+  <promo-block @open-menu="open"/>
+  <menu-block :isMenuOpen="isMenuOpen" @close-menu="close"/>
   <about-block/>
   <works-block/>
   <skills-block/>
@@ -31,6 +31,20 @@ export default {
     PromoBlock,
     ContactsBlock,
     AboutBlock,
+  },
+  data() {
+    return {
+      isMenuOpen: false,
+    }
+  },
+  methods: {
+    open() {
+      this.isMenuOpen = true;
+    },
+    close() {
+      this.isMenuOpen = false;
+
+    }
   }
 }
 </script>

@@ -1,6 +1,6 @@
 <template>
   <section class="promo">
-    <div class="hamburger">
+    <div class="hamburger" @click="open">
 
       <span></span>
       <span class="long"></span>
@@ -21,7 +21,17 @@
 
 <script>
 export default {
-  name: "Promo-block"
+  name: "Promo-block",
+  emits: {
+    "open-menu": null,
+  },
+
+  methods: {
+    open() {
+      this.$emit('open-menu');
+
+    },
+  }
 }
 </script>
 

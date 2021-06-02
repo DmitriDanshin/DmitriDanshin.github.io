@@ -4,7 +4,7 @@
       <h2 class="title title_fz16 title__section-title">Skills</h2>
 
       <h3 class="title title_fz36 title__section-subtitle">
-        What do I use in my work.
+        What I use in my work.
       </h3>
       <div class="divider"></div>
 
