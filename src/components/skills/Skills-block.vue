@@ -60,57 +60,13 @@
         </div>
       </div>
 
-      <div class="skills__percents">
+      <div class="skills__percents" >
         <div class="skills__percents-wrapper">
-          <div class="skills__percents-item">
-            <div class="title title_fz14 skills__percents-title">Website development</div>
-            <div class="skills__percents-value">45%</div>
+          <div v-for="skill in skills" :key="skill" class="skills__percents-item">
+            <div class="title title_fz14 skills__percents-title">{{ skill.name }}</div>
+            <div class="skills__percents-value">{{ skill.percentage }}%</div>
             <div class="skills__percents-out">
-                <span style='width: 50%' class="skills__percents-in  ">
-                </span>
-            </div>
-          </div>
-          <div class="skills__percents-item">
-            <div class="title title_fz14 skills__percents-title">Website development</div>
-            <div class="skills__percents-value">12%</div>
-            <div class="skills__percents-out">
-                <span style='width: 50%' class="skills__percents-in  ">
-                </span>
-            </div>
-
-          </div>
-          <div class="skills__percents-item">
-            <div class="title title_fz14 skills__percents-title">Website development</div>
-            <div class="skills__percents-value">43%</div>
-            <div class="skills__percents-out">
-                <span style='width: 50%' class="skills__percents-in  ">
-                </span>
-            </div>
-
-          </div>
-          <div class="skills__percents-item">
-            <div class="title title_fz14 skills__percents-title">Website development</div>
-            <div class="skills__percents-value">98%</div>
-            <div class="skills__percents-out">
-                <span style='width: 50%' class="skills__percents-in  ">
-                </span>
-            </div>
-
-          </div>
-          <div class="skills__percents-item">
-            <div class="title title_fz14 skills__percents-title">Website development</div>
-            <div class="skills__percents-value">10%</div>
-            <div class="skills__percents-out">
-                <span style='width: 50%' class="skills__percents-in  ">
-                </span>
-            </div>
-
-          </div>
-          <div class="skills__percents-item">
-            <div class="title title_fz14 skills__percents-title">Website development</div>
-            <div class="skills__percents-value">32%</div>
-            <div class="skills__percents-out">
-                <span style='width: 50%' class="skills__percents-in  ">
+                <span :style="{width: `${skill.percentage}%`}" class="skills__percents-in  ">
                 </span>
             </div>
           </div>
@@ -122,7 +78,42 @@
 
 <script>
 export default {
-  name: "Skills-block"
+  name: "Skills-block",
+  data() {
+    return {
+      skills: [
+        {
+          name: "Website development",
+          percentage: 90,
+        },
+        {
+          name: "Website development",
+          percentage: 54,
+        },
+        {
+          name: "Website development",
+          percentage: 5,
+        },
+        {
+          name: "Website development",
+          percentage: 30,
+        },
+        {
+          name: "Website development",
+          percentage: 100,
+        },
+        {
+          name: "Website development",
+          percentage: 20,
+        }
+      ]
+    }
+  },
+  methods: {
+    foo() {
+      console.log("OK");
+    }
+  }
 }
 </script>
 

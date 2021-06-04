@@ -13,7 +13,7 @@
 }
 
 @mixin appear-animation {
-  animation: appear ease-in 0.75s;
+  animation: appear ease-in 1.5s;
 
   @keyframes appear {
     0% {
@@ -22,6 +22,17 @@
     }
     100% {
       opacity: 1;
+    }
+  }
+}
+
+@mixin increase-width {
+  animation: width ease-in 0.75s;
+
+  @keyframes width {
+    0% {
+      width: 0;
+
     }
   }
 }
